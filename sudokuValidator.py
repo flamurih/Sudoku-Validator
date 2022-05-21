@@ -60,6 +60,7 @@ def check(grid):
 print("Type file-s name '.csv' to check Sudoku(e.g 'basicgrid.csv'): ")
 with open(input(" ")) as file:
     grid = [list(map(int,i)) for i in csv.reader(file,delimiter=',')]
+    print("")
 
     if(check(grid)):
         print("true")
